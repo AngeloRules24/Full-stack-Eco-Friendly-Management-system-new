@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    min-height: 140vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.registercontainer{
+    background-color: #9FE2BF;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    padding: 40px 30px;
+    margin: auto;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.formgroup{
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.errormessage {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+}
+
+.registerbutton{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+input[type="submit"] {
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+        
+input[type="submit"]:hover {
+    background-color: #303030;
+}
+
+.additionaloptions a:hover{
+    color: #677f8f;
+}

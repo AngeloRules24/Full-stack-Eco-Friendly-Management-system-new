@@ -1,0 +1,224 @@
+:root {
+    --green-dark: #009d27;
+    --green-deep: #0b4a0b;
+    --green-light: #dfffe0;
+    --gray-light: #f8f9fa;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: var(--gray-light);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.GardenHeader {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.GardenHeader h1 {
+    color: var(--green-deep);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.GardenHeader p {
+    color: #666;
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.GardenContainer {
+    width: 100%;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.GardenContainer img {
+    max-width: 100%;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+}
+
+.GardenContainer h2 {
+    color: var(--green-deep);
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 2rem;
+}
+
+.CommunityGarden h3 {
+    text-align: center;
+    margin: 1rem 0;
+    color: var(--green-dark);
+    font-size: 1.5rem;
+}
+
+.GardenContainer button {
+    display: block;
+    margin: 1rem auto 0;
+    padding: 12px 25px;
+    background: var(--green-dark);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s ease;
+}
+
+.GardenContainer button:hover {
+    background: var(--green-deep);
+}
+
+.FeaturesTitle {
+    width: 100%;
+    text-align: center;
+    color: var(--green-deep);
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.twoContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.featureCard {
+    flex: 1;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.2s;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.featureCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.featureCard img {
+    width: 100%;
+    max-width: 300px;
+    height: 180px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+
+.featureCard h4 {
+    color: var(--green-deep);
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.VideoHeader {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.VideoHeader h2 {
+    color: var(--green-deep);
+    font-size: 2rem;
+}
+
+.VideoContainer {
+    width: 100%;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    margin-bottom: 2rem;
+}
+
+.VideoContainer video {
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .GardenHeader h1 {
+        font-size: 2rem;
+    }
+    
+    .GardenContainer, .VideoContainer {
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .twoContainer {
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .featureCard {
+        padding: 1.25rem;
+    }
+    
+    .featureCard img {
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0.5rem;
+    }
+    
+    .GardenHeader h1 {
+        font-size: 1.8rem;
+    }
+    
+    .GardenHeader p {
+        font-size: 1rem;
+    }
+    
+    .GardenContainer, .VideoContainer {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .featureCard {
+        padding: 1rem;
+    }
+    
+    .featureCard img {
+        height: 120px;
+    }
+}
